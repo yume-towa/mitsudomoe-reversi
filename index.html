@@ -113,10 +113,17 @@ body.skin-sangoku{
 details{border-top:1px solid rgba(90,70,40,.3);margin-top:8px;padding-top:8px;font-size:14px;line-height:1.85;color:var(--sumi2)}
 summary{cursor:pointer;color:var(--sumi);font-size:15px}
 details ul{padding-left:1.2em;margin:6px 0}
+/* 作品一覧(TOPページ)に戻るボタン */
+.back-nav{margin:0 0 8px}
+.back-to-list{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;
+  font-family:inherit;font-size:12.5px;line-height:1.5;color:var(--sumi2);text-decoration:none;transition:color .15s,border-color .15s}
+.back-to-list:hover{color:var(--sumi);border-color:var(--sumi2)}
+.back-to-list:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 </style>
 </head>
 <body>
 <main>
+  <nav class="back-nav"><a class="back-to-list" href="https://yume-towa.github.io/">← 一覧に戻る</a></nav>
   <header>
     <svg viewBox="-50 -50 100 100" aria-hidden="true" id="crest"></svg>
     <h1>三つ巴リバーシ</h1>
